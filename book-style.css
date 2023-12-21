@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33,33,33);
+    padding: 1em;
+}
+.hidden {
+    display: none;
+}
+.selected-service {
+    color: green;
+}
+.selected-services {
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.logo img {
+    max-height: 90px;
+}
+
+/* Стиль выподающего меню*/
+header a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+}
+nav {
+    display: table;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.topmenu > li {
+    width: 25%;
+    float: left;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 30px;
+}
+.topmenu li a:hover { color: #D5B45B; }
+.submenu-link:after {
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+}
+.submenu {
+    background: #161616;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+.submenu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+section {
+    padding: 20px;
+}
+
+h4, .h4{
+    font-size: 1.375rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.h3, h2,
+h3 {
+    font-size: 36px;
+    font-family: "DIN Alternate";
+    margin-left: 10px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.text1 {
+    color: #d9a44c;
+}
+
+.text2 {
+    font-size: 25px;
+    color: #000;
+}
+
+.white{
+    color: white;
+}
+.ttu {
+    text-transform: uppercase;
+}
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+label {
+    padding: 0;
+    margin-top: 15px;
+    display: inline-block;
+}
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #383434;
+    border-radius: 5px;
+}
+input[type="submit"],
+input[type="reset"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrapconteiner{
+    flex-wrap: nowrap;
+}
+.location {
+    margin-left: 15px;
+    padding: 20px 30px;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

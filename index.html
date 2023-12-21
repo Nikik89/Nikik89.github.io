@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>МЕНЯЮСЬ</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets\logo.png" alt="Логотип Салона Красоты 'Элегант'"></a>
+        </div>
+        <nav>
+            <ul class="topmenu">
+                
+                <li><a href="" class="submenu-link">О нас</a>
+                    <ul class="submenu">
+                        <li><a href="https://vk.com/id0">VK</a></li>
+                        <li><a href="https://www.instagram.com/julia_stezhar/">Instagram</a></li>
+                    </ul>
+                </li>
+                <li><a href="#price-list">Прайс</a></li>
+                <li><a href="book.html">Записаться</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <div class="background-image"></div>
+        </div>
+        <div class="text-overlay">
+            <h2>О нас</h2>
+            <p>
+                Салон красоты "МЕНЯЮСЬ" - это в первую очередь профессионализм наших стилистов,
+                безупречное
+                исполнение услуг, использование лучших средств для ухода и, конечно, наслаждение,
+                которое вы
+                получаете, посещая наш салон.
+            </p>
+            <p>
+                Наши стилисты обладают только двумя руками. Да, они в силах работать с ними так, словно
+                их
+                десять, но они предпочитают не торопиться, потому что для нас важно качество. Мы ценим
+                каждую
+                деталь, стремимся к идеальной форме, гармонии и внимательному подходу.
+            </p>
+
+            <div class="text-right social-links">
+                <div class="social-link">
+                    <a href="https://vk.com/cutheads">
+                        <img src="assets/vk.svg" alt="VK" />
+                    </a>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.instagram.com/julia_stezhar/">
+                        <img src="assets/insta.svg" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Линия-->
+    <div class="s-advantages">
+        <div class="containerl">
+            <div class="row justify-content-around">
+                <div class="col-md-auto">
+                    <div class="s-advantages__item">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="s-advantages__icon-wrap">
+                                    <svg class="icon icon-trophy text-primary">
+                                        <img src="assets/cup-reward-svgrepo-com.svg" height="80" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="s-advantages__title h4 text-primary ttu">Лучшие барберы</div>
+                                <p>Наши барберы учатся у лучших мастеров России</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <div class="s-advantages__item">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="s-advantages__icon-wrap">
+                                    <svg class="icon icon-motorcycle">
+                                        <img src="assets/cup-of-coffee-svgrepo-com.svg" height="75">
+
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="s-advantages__title h4 text-primary ttu">Уютная атмосфера</div>
+                                <p>Качественная и правильная атмосфера</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  .col-->
+                <div class="col-md-auto">
+                    <div class="s-advantages__item">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="s-advantages__icon-wrap">
+                                    <svg class="icon icon-users text-primary">
+                                        <img src="assets/people-community-svgrepo-com.svg" height="80">
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="s-advantages__title h4 text-primary ttu">Довольные клиенты</div>
+                                <p>Более 1500 довольных клиентов в месяц!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  .col-->
+            </div>
+        </div>
+    </div>
+
+    <!--Фото-->
+    <div class="center-box">
+        <div class="box-inner">
+            <div class="slider">
+                <div class="filters__img"><img src="assets/750-1.jpg"></div>
+                <div class="filters__img"><img src="assets/750-2.jpg"></div>
+                <div class="filters__img"><img src="assets/750-4.jpg"></div>
+                <div class="filters__img"><img src="assets/750-5.jpg"></div>
+                <div class="filters__img"><img src="assets/750-6.jpg"></div>
+                <div class="filters__img"><img src="assets/750-7.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <!--Таблица с услугами-->
+    <div class="s-servises section" id="s-servises">
+        <a name="price-list"></a>
+        <div class="containerU">
+            <h2 class="ttu">Услуги</h2>
+            <div class="tabs-nav">
+                <button>Для женщин</button>
+                <button>Для мужчин</button>
+                <button>окрашивание</button>
+            </div>
+            <div class="tabs-wrap">
+                <div class="tab-content">
+                    <div class="row2">
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Элегантный образ</div>
+                                            <p>Создайте неповторимый облик с помощью стрижки, укладки и консультации
+                                                стилиста
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1900₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">60 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">SPA-маникюр и педикюр</div>
+                                            <p>Расслабьтесь и позаботьтесь о своих руках и ногах с нашим уходом,
+                                                включающим массаж и ухаживающие процедуры </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    2600₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Гламурный макияж</div>
+                                            <p>Подчеркните свою красоту с помощью профессионального макияжа, созданного
+                                                под ваш стиль и предпочтения
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1800₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">60 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Эпиляция воском</div>
+                                            <p>Избавьтесь от нежелательных волос с нашей безболезненной и эффективной
+                                                процедурой восковой эпиляции
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1100₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">30 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Уход за волосами</div>
+                                            <p>Восстановите здоровье и красоту ваших волос с нашими профессиональными
+                                                процедурами ухода </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    900₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Укладка для особых событий</div>
+                                            <p>Подготовьтесь к особенному случаю с нашей индивидуальной укладкой,
+                                                придающей вам особый шарм </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1500₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">30 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Французский маникюр</div>
+                                            <p>Откройте для себя элегантность классического французского маникюра с
+                                                нашими опытными мастерами </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    750₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">30 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Спа-массаж лица</div>
+                                            <p>Расслабьтесь и восстановите сияние вашей кожи с нашим уникальным массажем
+                                                и уходом за лицом </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    3400₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">20 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Брови и ресницы</div>
+                                            <p>Подчеркните ваш взгляд с помощью профессиональной окраски бровей и
+                                                ресниц, создавая выразительность и загадочность </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    700₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.tab-content -->
+
+                <div class="tab-content">
+                    <div class="row2">
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Мужская стрижка</div>
+                                            <p>Стрижка любой сложности с использованием ножниц и машинки
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1200₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">60 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Спортивный массаж</div>
+                                            <p>Энергичный массаж для снятия напряжения после тренировки, стимулирующий
+                                                восстановление мышц.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1800₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Королевское бритье</div>
+                                            <p>Влажное, чистовое бритье с использованием опасной бритвы.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1000₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">60 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Камуфляж седины</div>
+                                            <p>Тонирование седых волос с использования мужского красителя
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1000₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">30 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Бритье головы</div>
+                                            <p>Абсолютно чистое бритье головы с использованием опасной
+                                                бритвы </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1000₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Стрижка машинкой</div>
+                                            <p>Стрижка машинкой с использование 1-2 насадок </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    700₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">30 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Укладка волос</div>
+                                            <p>Стайлинг вашей прически лучшими средствами </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    300₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">30 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Стрижка бороды</div>
+                                            <p>Подравняем бороду и усы при помощи ножниц и машинки </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    700₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">20 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Моделирование бороды</div>
+                                            <p>Придание бороде формы с использованием бритвы + косметический
+                                                комплекс </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1000₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.tab-content -->
+
+                <div class="tab-content">
+                    <div class="row2">
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Балаяж</div>
+                                            <p>Подчеркните вашу индивидуальность с помощью модного и естественного
+                                                окрашивания
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    2500₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">60 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Омбре</div>
+                                            <p>Создайте гармонию переходов от темных к светлым оттенкам ваших волос с
+                                                помощью техники </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    2500₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Тонирование</div>
+                                            <p>Обновите цвет ваших волос и придайте им насыщенный блеск с помощью
+                                                профессионального тонирования
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1400₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">60 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Классический цвет</div>
+                                            <p>Подчеркните естественную красоту ваших волос с помощью классического
+                                                цветового окрашивания
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    2000₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">30 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-servises__col col-xl-4 col-sm-6">
+                            <div class="s-servises__item">
+                                <div class="row2">
+                                    <div class="col-lg-auto">
+                                        <div class="s-servises__caption">
+                                            <div class="h4">Фэшн-хайлайты</div>
+                                            <p>Придайте своим волосам яркий и стильный вид с помощью фэшн-хайлайт </p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <div class="row2">
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__price h5 text-primary strong">
+                                                    1400₽
+                                                </div>
+                                            </div>
+                                            <div class="s-servises__r-col col-lg-12 col-6">
+                                                <div class="s-servises__time">40 м.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.tab-content -->
+            </div><!-- /.tabs-wrap -->
+        </div>
+    </div>
+    <script>
+        const tabBtns = document.querySelectorAll('.tabs-nav button');
+        const tabs = document.querySelectorAll('.tabs-wrap .tab-content');
+        tabBtns[0].classList.add('active');
+        tabs[0].classList.add('active');
+        tabBtns.forEach((btn, index) => btn.addEventListener('click', () => {
+            tabBtns.forEach(btn => btn.classList.remove('active'));
+            btn.classList.add('active');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabs[index].classList.add('active');
+        }));
+    </script>
+
+    <!--Кнопка записи-->
+    <div class="center">
+        <a class="header__btn btn btn-primary online_button" href="book.html">Записаться</a>
+    </div>
+
+    <!--Карта и общая инфа-->
+    <div class="topmargin">
+        <div class="container">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A746b5601280d8f59c6435b881ddec6654016da77e5d7d20d59bf9829f59e8dfd&amp;width=566&amp;height=437&amp;lang=ru_RU&amp;scroll=true">
+                </script>
+            <div class="wrapconteiner">
+                <div class="location">
+                    <div class="h3 text1 ttu">
+                        режим работы
+                    </div>
+                    <div class="text2 white">
+                        Ежедневно с 10 до 20 часов
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="h3 text1 ttu">
+                        наше местоположение
+                    </div>
+                    <div class="text2 white">
+                        микрорайон Дубрава, квартал 3, дом 4
+                        <br>
+                        Старый Оскол, Россия
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="h3 text1 ttu">
+                        контакты
+                    </div>
+                    <div class="text2 white">
+                        +7 951 7777777
+                        <br>
+                        changing@mail.ru
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Салон Красоты "МЕНЯЮСЬ". Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>

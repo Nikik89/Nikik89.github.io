@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script2.js" defer></script>
+    <title>МЕНЯЮСЬ</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets\logo.png" alt="Логотип Салона Красоты 'Элегант'"></a>
+        </div>
+        <nav>
+            <ul class="topmenu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="" class="submenu-link">О нас</a>
+                    <ul class="submenu">
+                        <li><a href="https://vk.com/id0">VK</a></li>
+                        <li><a href="https://www.instagram.com/julia_stezhar/">Instagram</a></li>
+                    </ul>
+                </li>
+                <li><a href="#price-list">Прайс</a></li>
+                <li><a href="book.html">Записаться</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center-box">
+        <div class="box-inner">
+            <a name="book"></a>
+            <div class="h3 text1 ttu">
+                <h2>Онлайн запись </h2>
+            </div>
+            <div class="text2 selected-services">
+                <p id="selectedServices">Выбранные услуги:</p>
+                <p id="outputPrice">Цена: 0</p>
+            </div>
+            <div class="text2">
+                <form id="myForm">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required> <br>
+                    Пол: <br>
+                    <label>мужской<input name="Пол" type=radio value="Мужской" /></label> &nbsp;
+                    <label>женский<input name="Пол" type=radio value="Женский" /></label>
+                    <br>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+                        placeholder="+7 (951) 765-48-99" required>
+
+                    <label for="serviceType">Выберите вид услуги:</label>
+                    <select id="serviceType" name="serviceType">
+                        <option value="Для женщин">Для женщин</option>
+                        <option value="Для мужчин">Для мужчин</option>
+                        <option value="Окрашивание">Окрашивание</option>
+                    </select>
+                    <label for="service">Выберите услугу:</label>
+                    <div id="service" name="service">
+                        <!-- Услуги для женщин -->
+                        <div id="Для женщин" class="service-category">
+                            <input id="ЭлегантныйОбраз" type=checkbox value="Элегантный образ" data-price="1900">
+                            <label for="ЭлегантныйОбраз">Элегантный образ - 1900</label> <br>
+                            <input id="SPAManicurePedicure" type=checkbox value="SPA-маникюр и педикюр"
+                                data-price="2600">
+                            <label for="SPAManicurePedicure">SPA-маникюр и педикюр - 2600</label> <br>
+                            <input id="ГламурныйМакияж" type=checkbox value="Гламурный макияж" data-price="1800">
+                            <label for="ГламурныйМакияж">Гламурный макияж - 1800</label> <br>
+                            <input id="ЭпиляцияВоском" type=checkbox value="Эпиляция воском" data-price="1100">
+                            <label for="ЭпиляцияВоском">Эпиляция воском - 1100</label> <br>
+                            <input id="УходЗаВолосами" type=checkbox value="Уход за волосами" data-price="900">
+                            <label for="УходЗаВолосами">Уход за волосами - 900</label> <br>
+                            <input id="УкладкаДляОсобыхСобытий" type=checkbox value="Укладка для особых событий"
+                                data-price="1500">
+                            <label for="УкладкаДляОсобыхСобытий">Укладка для особых событий - 1500</label> <br>
+                            <input id="ФранцузскийМаникюр" type=checkbox value="Французский маникюр" data-price="750">
+                            <label for="ФранцузскийМаникюр">Французский маникюр - 750</label> <br>
+                            <input id="СпаМассажЛица" type=checkbox value="Спа-массаж лица" data-price="3400">
+                            <label for="СпаМассажЛица">Спа-массаж лица - 3400</label> <br>
+                            <input id="БровиИРесницы" type=checkbox value="Брови и ресницы" data-price="700">
+                            <label for="БровиИРесницы">Брови и ресницы - 700</label> <br>
+                        </div>
+                        <!-- Услуги для мужчин -->
+                        <div id="Для мужчин" class="service-category hidden">
+                            <input id="МужскаяСтрижка" type=checkbox value="Мужская стрижка" data-price="1200">
+                            <label for="МужскаяСтрижка">Мужская стрижка - 1200</label> <br>
+                            <input id="СпортивныйМассаж" type=checkbox value="Спортивный массаж" data-price="1800">
+                            <label for="СпортивныйМассаж">Спортивный массаж - 1800</label> <br>
+                            <input id="КоролевскоеБритье" type=checkbox value="Королевское бритье" data-price="1000">
+                            <label for="КоролевскоеБритье">Королевское бритье - 1000</label> <br>
+                            <input id="КамуфляжСедины" type=checkbox value="Камуфляж седины" data-price="1000">
+                            <label for="КамуфляжСедины">Камуфляж седины - 1000</label> <br>
+                            <input id="БритьеГоловы" type=checkbox value="Бритье головы" data-price="1000">
+                            <label for="БритьеГоловы">Бритье головы - 1000</label> <br>
+                            <input id="СтрижкаМашинкой" type=checkbox value="Стрижка машинкой" data-price="700">
+                            <label for="СтрижкаМашинкой">Стрижка машинкой - 700</label> <br>
+                            <input id="УкладкаВолос" type=checkbox value="Укладка волос" data-price="300">
+                            <label for="УкладкаВолос">Укладка волос - 300</label> <br>
+                            <input id="СтрижкаБороды" type=checkbox value="Стрижка бороды" data-price="700">
+                            <label for="СтрижкаБороды">Стрижка бороды - 700</label> <br>
+                            <input id="МоделированиеБороды" type=checkbox value="Моделирование бороды"
+                                data-price="1000">
+                            <label for="МоделированиеБороды">Моделирование бороды - 1000</label> <br>
+                        </div>
+                        <!-- Услуги для окрашивания -->
+                        <div id="Окрашивание" class="service-category hidden">
+                            <input id="Балаяж" type=checkbox value="Балаяж" data-price="2500">
+                            <label for="Балаяж">Балаяж - 2500</label> <br>
+                            <input id="Омбре" type=checkbox value="Омбре" data-price="2500">
+                            <label for="Омбре">Омбре - 2500</label> <br>
+                            <input id="Тонирование" type=checkbox value="Тонирование" data-price="1400">
+                            <label for="Тонирование">Тонирование - 1400</label> <br>
+                            <input id="КлассическийЦвет" type=checkbox value="Классический цвет" data-price="2000">
+                            <label for="КлассическийЦвет">Классический цвет - 2000</label> <br>
+                            <input id="ФэшнХайлайты" type=checkbox value="Фэшн-хайлайты" data-price="1400">
+                            <label for="ФэшнХайлайты">Фэшн-хайлайты - 1400</label> <br>
+                        </div>
+                    </div>
+
+
+                    <p>Дата посещения:</p>
+                    <div class="booking-date">
+                        <input type="datetime-local" min="" max="2023-12-27T00:00" id="bookingDate" required
+                            value="2023-12-22T08:30" />
+                    </div>
+
+                    <label for="comment">Комментарий:</label>
+                    <textarea id="comment" name="comment" rows="4"></textarea>
+
+                    <input type="submit" value="Записаться">
+                    <input type="reset" value="Очистить форму">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Салон Красоты "МЕНЯЮСЬ". Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>
